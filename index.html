@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS3-->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.2/angular-animate.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <title></title>
+</head>
+
+<body>
+    <div ng-app="quoteApp" ng-controller="quoteCtrl" ng-cloak style="margin-top:100px">
+        <div class="w3-panel w3-light-grey w3-padding-64 card">
+            <div class="w3-center w3-padding" id="main" ng-class="fade">
+                <div class="w3-xlarge w3-serif">
+                    <p id="quoteq">&#10077 {{quoteQ}} &#10078</p>
+                </div>
+                <p id="authorq">- {{authorQ}}</p>
+            </div>
+            <div style="padding: 0 15px">
+                <a class="w3-button w3-left w3-black w3-hover-black" href="https://twitter.com/intent/tweet?text={{quoteQ}} - {{authorQ}}.&button_hashtag=Quote" id="tweet"><i class="fa fa-twitter" style="font-size:20px"></i></a>
+
+                <button class="w3-button w3-right w3-black w3-hover-black" ng-click="randomQuote(quotes)" id="newQuoteButton">New Quote</button>
+                <!--<a class="twitter-share-button w3-btn w3-amber" href="https://twitter.com/intent/tweet" data-size="large">Tweet</a>-->
+            </div>
+        </div>
+
+       
+
+    </div>
+
+ <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+</body>
+
+</html>
